@@ -1,0 +1,69 @@
+.scroll {
+    display: flex;
+    padding: 25px;
+    z-index: 10;
+  }
+  
+  .scrollTitle {
+    margin: 8px;
+  }
+
+  .scrollTitleContainer {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 8px;
+  }
+
+  .Title__arrow {
+    opacity: 0;
+  }
+
+  .scrollTitleContainer:hover > .Title__arrow {
+    opacity: 1;
+    transition: all 500ms ease;
+  }
+
+  .item {
+    flex: 0 0 15%;
+    background-size: 100% 100%;
+    /* text-align: center; */
+    margin: 0 8px;
+    transition: transform 300ms ease 100ms;
+    height: 250px;
+    object-fit: stretch;
+  }
+
+
+.scroll:hover .item {
+    transform: translateX(-25%);
+ }
+
+ .item:hover ~ .item {
+    transform: translateX(25%);
+ }
+
+
+.item:hover {
+    transform: scale(1.25) !important;
+  }
+
+.scroll {
+    overflow-x: scroll;
+}
+
+.scrollLeftIcon {
+  color: whitesmoke;
+  z-index: 100;
+  position: relative;
+  left: 10;
+  top: 50%;
+}
+
+.scrollRightIcon {
+  color: whitesmoke;
+  z-index: 9999;
+  position: relative;
+  left: 1000px;
+  top: 0;
+}

@@ -1,0 +1,46 @@
+.container {
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.itemButton > button {
+    background-color: white;
+    color: black;
+}
+
+.item__info {
+    width: 50%;
+    padding: 40px;
+    padding-top: 200px;
+    z-index: 100;
+    border-radius: 25px;
+}
+
+.item__plot,
+.item__title {
+    color: white;
+}
+.item__title {
+    font-size: 42px;
+}
+
+.item__plot {
+    font-size: 14px;
+}
+
+#more {display: none;}
+#myBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.itemButtons {
+    display: flex;
+}
+
+.itemButton {
+    margin: 8px;
+}
+
