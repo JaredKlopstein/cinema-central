@@ -5,9 +5,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import "./SignIn.css";
 import { Button } from "@mui/material";
 import Logo from '../assets/fulllogo.png'
+
 function Login() {
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
+
   useEffect(() => {
     if (loading) {
       // maybe trigger a loading screen
@@ -15,11 +17,12 @@ function Login() {
     }
     if (user) navigate("/");
   }, [user, loading]);
+
   return (
     <div className="login">
       <div className="login__container">
         <img className='login__logo' src={Logo} alt="" />
-        <Button className="login__btn login__google" onClick={signInWithGoogle}>
+        <Button variant="contained" onClick={signInWithGoogle}>
         Login with Google
         </Button>
         <div>

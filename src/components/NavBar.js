@@ -40,11 +40,11 @@ function NavBar() {
                 <Link className="navbar__link" to="/">Home</Link>
                 </div>
               <div className="navbar__option">
-                <Link className="navbar__link" to="/new">New &#38; Popular</Link>
+                <Link className="navbar__link no__cursor" to="/new">New &#38; Popular</Link>
                 </div>
                 {user &&  
                   <div className="navbar__option">
-                  <Link className="navbar__link" to="/mylist">My List</Link>
+                  <Link className="navbar__link no__cursor" to="/mylist">My List</Link>
                   </div>}
         </div>
         <div className="navbar__Right">
@@ -60,11 +60,11 @@ function NavBar() {
               <NotificationsOutlinedIcon className='navbar__Icon'/>
               <Avatar className='navbar__Icon' onClick={() => auth.signOut()} src={user?.photoURL}/> </> :
               <>
-              <Link className='navbar__Icon' to='/signin'>
-              <Button variant="contained" href='/signin'>Sign In</Button>
+              <Link className='navbar__Btn' to='/signin'>
+              <Button  variant="contained">Sign In</Button>
               </Link>
-              <Link className='navbar__Icon' to='/signin'>
-              <Button variant="contained" href='/signup'>Sign Up</Button>
+              <Link className='navbar__Btn' to='/signup'>
+              <Button variant="contained">Sign Up</Button>
               </Link>
               </> 
               }

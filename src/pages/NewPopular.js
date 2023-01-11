@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 function NewPopular() {
   return (
   <NavBar/>
+  
   )
 }
 

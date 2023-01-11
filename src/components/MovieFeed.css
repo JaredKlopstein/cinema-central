@@ -32,6 +32,7 @@
     transition: transform 300ms ease 100ms;
     height: 250px;
     object-fit: stretch;
+    display: inline-block
   }
 
 
@@ -52,18 +53,9 @@
     overflow-x: scroll;
 }
 
-.scrollLeftIcon {
-  color: whitesmoke;
-  z-index: 100;
-  position: relative;
-  left: 10;
-  top: 50%;
-}
+@media (max-width: 650px) {
+  .item {
+    flex: 0 0 42%;
+  }
 
-.scrollRightIcon {
-  color: whitesmoke;
-  z-index: 9999;
-  position: relative;
-  left: 1000px;
-  top: 0;
 }

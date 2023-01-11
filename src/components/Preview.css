@@ -1,21 +1,17 @@
 .container {
     height: 600px;
     width: 100%;
-    margin: 0;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 
 .itemButton > button {
-    background-color: white;
-    color: black;
+    width: 150px;
 }
 
 .item__info {
     width: 50%;
     padding: 40px;
     padding-top: 200px;
-    z-index: 100;
-    border-radius: 25px;
 }
 
 .item__plot,
@@ -44,3 +40,24 @@
     margin: 8px;
 }
 
+@media (max-width: 650px) {
+    .item__title {
+      font-size: 24px;
+    }
+
+    .item__plot {
+        font-size: 12px;
+    }
+    
+    .itemButtons {
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .itemButton > button {
+        font-size: 12px;
+        width: 100%;
+    }
+
+  }
